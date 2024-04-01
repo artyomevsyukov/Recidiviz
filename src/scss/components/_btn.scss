@@ -1,0 +1,23 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 17px 33px;
+    font-size: var(--main-size);
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02px;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 80px;
+    color: var(--light-color);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    @extend %btn-state;
+}
+
+.btn.focus-visible {
+    border-color: var(--active-color);
+}

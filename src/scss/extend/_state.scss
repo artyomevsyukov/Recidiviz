@@ -1,0 +1,26 @@
+%state {
+    &:focus {
+        outline: none;
+    }
+    @include hover {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    &:active {
+        color: var(--active-color);
+        border-color: var(--active-color);
+    }
+}
+%btn-state {
+    &:focus {
+        outline: none;
+    }
+    @include hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    &:active {
+        background-color: var(--active-color);
+        border-color: var(--active-color);
+    }
+}
