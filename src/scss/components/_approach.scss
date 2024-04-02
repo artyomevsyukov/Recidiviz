@@ -1,0 +1,111 @@
+.approach {
+    &__top {
+        padding: 63px 0;
+        background-color: rgb(247, 248, 248);
+    }
+
+    &__left {
+        padding-top: 33px;
+        grid-column: 6 span;
+        // grid-column: 5 span;
+    }
+    &__right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        grid-column: 6 span;
+        // grid-column: 7 / 6 span;
+        // gap: 8px;
+        margin-right: -11px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+        color: rgb(0, 51, 49);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    &__descr {
+        margin: 0;
+        margin-bottom: 37px;
+        max-width: 469px;
+        color: rgba(53, 83, 98, 0.8);
+        font-size: var(--second-size);
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__btn {
+        padding: 16px 34px;
+
+        color: rgb(0, 65, 62);
+        font-size: var(--main-size);
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        text-align: center;
+
+        box-sizing: border-box;
+        border: 1px solid rgba(53, 83, 98, 0.2);
+        border-radius: 80px;
+    }
+
+    &__bottom {
+        padding: 43px 0;
+        background-color: var(--light-color);
+    }
+
+    &__right {
+        // transform: translateY(-13%);
+    }
+    &__img {
+        margin-right: 5px;
+    }
+    &__list {
+        background-color: var(--light-color);
+    }
+    &__link {
+        display: block;
+        // width: 100%;
+        padding-top: 17px;
+        padding-left: 32px;
+        border-top: 1px solid rgba(255, 255, 255, 0.6);
+        color: rgba(53, 83, 98, 0.8);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        background-position: left top 15px;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+        &--ted {
+            background-image: url("../img/approach-icon-1.png ");
+        }
+        &--nyt {
+            background-position: left top 28px;
+            background-image: url("../img/approach-icon-2.png ");
+        }
+        &--scoop {
+            background-image: url("../img/approach-icon-3.png ");
+        }
+        &--press {
+            background-image: url("../img/approach-icon-4.png ");
+        }
+        &--time {
+            background-image: url("../img/approach-icon-5.png ");
+        }
+        &--freethink {
+            background-image: url("../img/approach-icon-6.png ");
+        }
+
+        @extend %state;
+    }
+    &__item {
+        grid-column: 2 span;
+    }
+}
+.approach__link.focus-visible {
+    border-color: var(--active-color);
+}

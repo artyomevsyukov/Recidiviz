@@ -29,7 +29,7 @@
         align-items: center;
 
         &::before {
-            margin-bottom: 19px;
+            margin-bottom: 1px;
             counter-increment: steps;
             content: counter(steps);
             color: var(--light-color);
@@ -58,7 +58,7 @@
                 top: 50%;
                 width: 95%;
                 height: 1px;
-                margin-top: -59px;
+                margin-top: -49px;
                 background: rgba(53, 83, 98, 0.2);
                 transform: translateY(-50%);
             }
