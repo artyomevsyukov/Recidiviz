@@ -1,0 +1,74 @@
+.press-card {
+    position: relative;
+    min-height: 145px;
+    border-top: 1px solid rgba(53, 83, 98, 0.3);
+    &__top {
+        padding-top: 20px;
+        display: flex;
+    }
+    &__author {
+        margin-top: -18px;
+        margin-right: 22px;
+        padding: 18px 0 13px 0;
+        padding-left: 40px;
+
+        text-transform: uppercase;
+        color: rgba(53, 83, 98, 0.6);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        background-position: left 0 top 14px;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+
+        &--ted {
+            background-image: url("../img/approach-icon-1.png ");
+        }
+        &--correctional {
+            background-image: url("../img/press2.png ");
+        }
+        &--department {
+            background-image: url("../img/press3.png ");
+        }
+        &--nyt {
+            background-image: url("../img/press4.png ");
+        }
+        &--corrections1 {
+            background-image: url("../img/press5.png ");
+        }
+        &--roc {
+            background-image: url("../img/press6.png ");
+        }
+    }
+    &__date {
+        color: rgba(53, 83, 98, 0.6);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+    }
+    &__title {
+        margin: 0px 0 20px 0;
+        // margin-bottom: 10px;
+        color: rgb(0, 65, 62);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24.65px;
+    }
+    &__link {
+        color: inherit;
+        color: rgb(0, 65, 62);
+        font-family: Public Sans;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24.65px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            // Вся карта ссылка
+        }
+    }
+}

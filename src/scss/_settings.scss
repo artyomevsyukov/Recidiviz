@@ -115,3 +115,9 @@ a {
     grid-template-columns: repeat(12, 1fr);
     column-gap: var(--offset);
 }
+
+.graphics {
+    padding-top: 45px;
+    width: 100%;
+    background-color: rgb(244, 245, 245);
+}
