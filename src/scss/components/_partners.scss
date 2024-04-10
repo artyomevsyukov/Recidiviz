@@ -3,6 +3,7 @@
     &__container {
         gap: 7px;
         align-items: center;
+        justify-content: center;
     }
     &__title {
         color: rgba(53, 83, 98, 0.6);
@@ -31,6 +32,11 @@
     &__item {
     }
     &__link {
+    }
+    &__logo {
+        @include big-desktop {
+            max-width: 140px;
+        }
     }
     &__more {
         transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;

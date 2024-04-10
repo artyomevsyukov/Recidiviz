@@ -15,6 +15,9 @@
     // a {
     //     color: var(--light-color);
     // }
+    &__container {
+        margin-bottom: 50px;
+    }
     &__content {
         grid-column: 6 span;
     }

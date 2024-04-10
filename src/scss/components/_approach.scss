@@ -7,7 +7,9 @@
     &__left {
         padding-top: 33px;
         grid-column: 6 span;
-        // grid-column: 5 span;
+        @include big-desktop {
+            margin-bottom: 40px;
+        }
     }
     &__right {
         display: flex;
@@ -17,6 +19,10 @@
         // grid-column: 7 / 6 span;
         // gap: 8px;
         margin-right: -11px;
+        @include big-desktop {
+            justify-content: flex-start;
+            grid-column: 12 span;
+        }
     }
     &__title {
         margin: 0;
