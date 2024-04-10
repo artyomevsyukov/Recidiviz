@@ -70,5 +70,13 @@
             inset: 0;
             // Вся карта ссылка
         }
+        @extend %state;
     }
+}
+
+.press-card__link.focus-visible {
+    border-color: var(--active-color);
+    outline: 1px solid var(--active-color);
+    outline-offset: 3px;
+    border-radius: 2px;
 }
