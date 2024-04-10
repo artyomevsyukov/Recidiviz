@@ -33,6 +33,7 @@
     &__link {
     }
     &__more {
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
         @extend %state;
     }
 }
