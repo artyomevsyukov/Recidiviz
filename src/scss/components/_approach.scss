@@ -2,12 +2,20 @@
     &__top {
         padding: 63px 0;
         background-color: rgb(247, 248, 248);
+        @include small-tablet {
+            padding: 40px 0;
+        }
     }
 
     &__left {
         padding-top: 33px;
         grid-column: 6 span;
         @include big-desktop {
+            display: flex;
+            flex-direction: column;
+            grid-column: 12 span;
+            justify-self: center;
+            align-items: center;
             margin-bottom: 40px;
         }
     }
@@ -21,6 +29,8 @@
         margin-right: -11px;
         @include big-desktop {
             justify-content: flex-start;
+            justify-self: center;
+
             grid-column: 12 span;
         }
     }
@@ -55,11 +65,19 @@
         box-sizing: border-box;
         border: 1px solid rgba(53, 83, 98, 0.2);
         border-radius: 80px;
+        @include big-desktop {
+            display: inline-flex;
+            justify-content: center;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
     }
 
     &__bottom {
         padding: 43px 0;
         background-color: var(--light-color);
+        @include tablet {
+        }
     }
 
     &__right {
@@ -92,6 +110,9 @@
         &--nyt {
             background-position: left top 28px;
             background-image: url("../img/approach-icon-2.png ");
+            @include tablet {
+                background-position: left top 16px;
+            }
         }
         &--scoop {
             background-image: url("../img/approach-icon-3.png ");
@@ -110,6 +131,10 @@
     }
     &__item {
         grid-column: 2 span;
+        @include tablet {
+            grid-column: 3 span;
+            margin-bottom: 30px;
+        }
     }
 }
 .approach__link.focus-visible {

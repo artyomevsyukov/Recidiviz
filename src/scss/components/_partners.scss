@@ -4,6 +4,14 @@
         gap: 7px;
         align-items: center;
         justify-content: center;
+        @include big-desktop {
+            // justify-content: space-between;
+        }
+        @include tablet {
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
     }
     &__title {
         color: rgba(53, 83, 98, 0.6);
@@ -20,6 +28,9 @@
         align-items: center;
         justify-content: center;
         gap: 13px;
+        @include tablet {
+            flex-wrap: wrap;
+        }
     }
     &__more {
         color: rgba(53, 83, 98, 0.6);
@@ -35,7 +46,10 @@
     }
     &__logo {
         @include big-desktop {
-            max-width: 140px;
+            max-width: 130px;
+        }
+        @include tablet {
+            max-width: 100px;
         }
     }
     &__more {

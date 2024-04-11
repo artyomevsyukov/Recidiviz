@@ -4,10 +4,24 @@
 
     &__left {
         grid-column: 6 span;
+        @include tablet {
+            grid-column: 5 span;
+        }
+        @include small-tablet {
+            grid-column: 12 span;
+            margin-bottom: 20px;
+        }
     }
     &__right {
         grid-column: 7 / 6 span;
         gap: 36px 33px;
+        @include tablet {
+            grid-column: 6/ 7 span;
+            gap: 30px 27px;
+        }
+        @include small-tablet {
+            grid-column: 12 span;
+        }
     }
     &__item {
         grid-column: 6 span;
@@ -22,6 +36,12 @@
         font-weight: 400;
         line-height: 38px;
         letter-spacing: 1.2px;
+        @include tablet {
+            max-width: 100%;
+        }
+        @include small-tablet {
+            text-align: center;
+        }
     }
     &__subtitle {
         margin: 0;
@@ -43,5 +63,8 @@
         letter-spacing: 0%;
     }
     &__block {
+    }
+    @include small-tablet {
+        padding-bottom: 40px;
     }
 }

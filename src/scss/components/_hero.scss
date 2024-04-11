@@ -28,6 +28,10 @@
         font-size: 38px;
         line-height: 44px;
         letter-spacing: 1.2px;
+        @include tablet {
+            font-size: 30px;
+            line-height: 36px;
+        }
     }
     &__descr {
         margin: 0;
@@ -35,6 +39,9 @@
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0%;
+        @include tablet {
+            font-size: 16px;
+        }
     }
     &__bottom {
         padding-bottom: 40px;

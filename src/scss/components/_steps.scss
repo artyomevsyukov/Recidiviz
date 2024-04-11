@@ -1,7 +1,9 @@
 .steps {
     padding: 120px 0;
     background-color: var(--light-color);
-
+    @include small-tablet {
+        padding: 40px 0;
+    }
     &__title {
         margin: 0 auto;
         margin-bottom: 57px;

@@ -1,11 +1,35 @@
 .where {
     padding: 148px 0 136px;
     background-color: #001f1f;
+    @include tablet {
+        padding: 100px 0;
+    }
+    @include small-tablet {
+        padding: 50px 0;
+    }
+    &__container {
+        @include small-tablet {
+            justify-items: center;
+        }
+    }
     &__content {
         grid-column: 4 span;
+        @include tablet {
+            grid-column: 6 span;
+        }
+        @include small-tablet {
+            grid-column: 12 span;
+            margin-bottom: 30px;
+        }
     }
     &__map {
         grid-column: 7 / 5 span;
+        @include tablet {
+            grid-column: 7/ 6 span;
+        }
+        @include small-tablet {
+            grid-column: 12 span;
+        }
     }
     &__title {
         margin: 0;

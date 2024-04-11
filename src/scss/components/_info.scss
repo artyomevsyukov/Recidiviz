@@ -2,8 +2,10 @@
     position: relative;
     display: flex;
     height: 660px;
-
     background-color: rgb(0, 20, 20);
+    @include small-tablet {
+        height: auto;
+    }
 
     &::before {
         content: "";
@@ -14,6 +16,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @include tablet {
+            width: 200px;
+        }
+        @include small-tablet {
+            display: none;
+        }
     }
     &::after {
         content: "";
@@ -24,6 +32,12 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        @include tablet {
+            width: 200px;
+        }
+        @include small-tablet {
+            display: none;
+        }
     }
 
     &__content {
@@ -35,6 +49,12 @@
         justify-content: center;
         border-left: 1px solid #001414;
         border-right: 1px solid #001414;
+        @include tablet {
+            padding: 0 30px;
+        }
+        @include small-tablet {
+            padding: var(--offset);
+        }
     }
     &__text {
         max-width: 542px;
